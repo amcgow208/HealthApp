@@ -27,6 +27,12 @@ public class Controller {
                 case 'A':
                     displayUser();
                     break;
+                case 'B':
+                    updateUser();
+                    break;
+                case 'C':
+                    viewBMI();
+                    break;
                 case 'Q':
                     finished = true;
                     break;
@@ -40,5 +46,18 @@ public class Controller {
         System.out.println("===========");
         List<User> userList = repository.getUserInformation();
         System.out.println(userList);
+    }
+    public void updateUser() {
+        System.out.println("Edit User Information");
+        System.out.println("===========");
+
+
+    }
+    public void viewBMI() {
+        System.out.println("Current BMI");
+        System.out.println("===========");
+        int userBMI = repository.getBMI();
+        System.out.println(userBMI);
+
     }
 }
