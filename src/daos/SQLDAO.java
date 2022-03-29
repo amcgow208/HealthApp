@@ -1,4 +1,4 @@
 package daos;
 
-public class SQLDAO {
+public class SQLDAO extends DAO {
 }
