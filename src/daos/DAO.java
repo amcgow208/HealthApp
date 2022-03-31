@@ -4,23 +4,6 @@ import java.util.List;
 
 
 public abstract class DAO {
-    private String userName;
-
-    private String passWord;
-
-    private int id;
-
-    private String FirstName;
-
-    private String LastName;
-
-    private int weight;
-
-    private int height;
-
-    private int calories;
-
-
 
     public String getUserName(){
         return this.userName;

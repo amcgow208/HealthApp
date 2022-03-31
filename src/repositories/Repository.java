@@ -28,7 +28,6 @@ public Repository(){
         dao.setPassWord(passWord);
     }
 
-
     public int getId() {
         return dao.getId();
     }

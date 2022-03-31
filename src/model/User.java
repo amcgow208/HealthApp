@@ -11,36 +11,20 @@ public class User {
 
     private String LastName;
 
-    private int weight;
 
-    private int height;
-
-    private int calories;
-
-    public User(int id, String firstName, String lastName, int weight, int height, int calories){
+    public User(int id, String firstName, String lastName){
         this.id = id;
         this.FirstName = firstName;
         this.LastName = lastName;
-        this.weight = weight;
-        this.height = height;
-        this.calories = calories;
 
-    }
-    public User(String firstName, String lastName, int weight, int height, int calories) {
-        this.id = 0;
-        this.FirstName = firstName;
-        this.LastName = lastName;
-        this.weight = weight;
-        this.height = height;
-        this.calories = calories;
+
     }
     public User(String firstName, String lastName) {
         this.id = 0;
         this.FirstName = firstName;
         this.LastName = lastName;
-        this.weight = 0;
-        this.height = 0;
-        this.calories = 0;
+
+
     }
 
     public String getUserName(){
@@ -92,13 +76,5 @@ public class User {
     public void setHeight(int height){
         this.height = height;
     }
-    public void setCalories(int calories){
-        this.calories = calories;
-    }
-    public int getCalories(){
-        return this.calories;
-    }
-
-
 
 }
